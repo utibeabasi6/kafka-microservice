@@ -43,6 +43,7 @@ def sendEmail(body):
 
 
 if __name__ == '__main__':
+
     # Wait for broker to come online
     time.sleep(25)
     cur = conn.cursor()
@@ -50,6 +51,7 @@ if __name__ == '__main__':
     # Create the orders table in the database
     cur.execute(
         "CREATE TABLE orders(name varchar(255), email varchar(255), item varchar(255))")
+
     # Parse the configuration.
     config_parser = ConfigParser()
 
@@ -95,7 +97,7 @@ if __name__ == '__main__':
                     logger.warning("Email sent successfully!")
                 else:
                     logger.warning("Email not sent!")
-                    
+
     except KeyboardInterrupt:
         pass
     finally:
