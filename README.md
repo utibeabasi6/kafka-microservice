@@ -37,3 +37,7 @@ To follow up with this guide, make sure you have the following installed
 ![image3](images/image6.png)
 
 - Finally, kill the running processes with `ctrl+c` and run `make down` to remove the containers created.
+
+# Hire me
+
+Looking for a DevOps engineer or SRE to join your team? Reach out to me via email [utibeabasiumanah6@gmail.com](mailto:utibeabasiumanah6@gmail.com)
