@@ -14,7 +14,7 @@ To follow up with this guide, make sure you have the following installed
 
 - Clone the repo by running `git clone <repo_url>`
 
-- In the docker-compose.yaml file, update the values of `GMAIL_USER` and `GMAIL_PASSWORD` to match that of your email client.
+- In the docker-compose.yaml file, update the values of `GMAIL_USER` and `GMAIL_PASSWORD` to match that of your email client. If you are using gmail, make sure to have less secure apps enabled
 
 - A Makefile has been provided for easy setup so `cd` into the `kafka-microservice` directory and run the command `make up` to startup docker compose. This command builds the required containers and starts them up. The process might take a while so be patient. You should see logs from the `consumer_1` container when the setup is complete
 
@@ -36,4 +36,4 @@ To follow up with this guide, make sure you have the following installed
 
 ![image3](images/image6.png)
 
-- Finally, kill the running processwith `ctrl+c` and run `make down` to remove the containers created.
+- Finally, kill the running processes with `ctrl+c` and run `make down` to remove the containers created.
